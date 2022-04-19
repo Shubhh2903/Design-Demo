@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+<<<<<<< HEAD
 import Container from "../atoms/Container";
+=======
+>>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
 import FontStyle from "../font/FontStyle";
 const Text = styled.div`
   height: 176px;
@@ -67,7 +70,10 @@ function Content() {
   return (
     <div>
       <FontStyle />
+<<<<<<< HEAD
       <Container>
+=======
+>>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
       <OurStory>
         <span style={{ fontSize: "90px" }}>o</span>ur{" "}
         <span style={{ fontSize: "90px" }}>s</span>tory
@@ -99,7 +105,10 @@ function Content() {
         </p>
 
       </Description>
+<<<<<<< HEAD
       </Container>
+=======
+>>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
     </div>
   );
 }
