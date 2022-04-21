@@ -1,40 +1,57 @@
 import React from "react";
 import styled from "styled-components";
-<<<<<<< HEAD
 import Container from "../atoms/Container";
-=======
->>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
 import FontStyle from "../font/FontStyle";
-const Text = styled.div`
-  height: 176px;
-  width: 643.4px;
-  padding-top: 282px;
-  font-family: Lato-Light;
-  line-height: 1.23;
-  font-size: 65px;
-  font-weight: 300;
-  color: #111;
-`;
+import Photo from "../Image/about-us.png";
+function Content() {
+  return (
+    <div>
+      <FontStyle />
 
-const Subparagrah = styled.p`
-  width: 612px;
-  height: 62px;
-  line-height: 1.89;
-  font-size: 18px;
-  color: #3f3f3f;
-`;
+      <BodySection>
+        <div>
+          <OurStory>
+            <div>
+              <span style={{ fontSize: "90px" }}>o</span>ur
+            </div>
+            <div>
+              <span style={{ fontSize: "90px" }}>s</span>tory
+            </div>
+          </OurStory>
+          <Heading>
+            Increase your <b>Business performance</b>
+          </Heading>
+          <Description>
+            <p style={{ lineHeight: "26px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
 
-const Contact = styled.button`
-  width: 239px;
-  height: 62px;
-  padding: 20px 77px;
-  bordar-radius: 2px;
-  border: solid 2px #fea825;
-  background-color: #fea825;
-  color: #ffffff;
-  font-family: Lato-SemiBold;
-  cursor: pointer;
-`;
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </Description>
+          <Contact>Contact Us</Contact>
+        </div>
+        <AboutUs />
+      </BodySection>
+    </div>
+  );
+}
+
+export default Content;
 
 const OurStory = styled.div`
   width: 480px;
@@ -45,7 +62,8 @@ const OurStory = styled.div`
   font-family: Lato-SemiBold;
   letter-spacing: 13.4px;
   color: #1b75bc;
-  margin-top: 400px;
+  display: flex;
+  // flex-direction:column;
 `;
 
 const Heading = styled.div`
@@ -66,51 +84,27 @@ const Description = styled.div`
   margin-top: 39px;
 `;
 
-function Content() {
-  return (
-    <div>
-      <FontStyle />
-<<<<<<< HEAD
-      <Container>
-=======
->>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
-      <OurStory>
-        <span style={{ fontSize: "90px" }}>o</span>ur{" "}
-        <span style={{ fontSize: "90px" }}>s</span>tory
-      </OurStory>
-      <Heading>
-        Increase your <b>Business performance</b>
-      </Heading>
-      <Description>
-        <p style={{lineHeight:"26px"}}>
-          
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+const BodySection = styled.div`
+  display: flex;
+  margin: 100px 96px 100px 115px;
+  justify-content: space-between;
+`;
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+const AboutUs = styled.div`
+  background-image: url(${Photo});
+  width: 510px;
+  height: 629px;
+  background-size: cover;
+  margin: 25px 0 96px 249px;
+`;
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-
-      </Description>
-<<<<<<< HEAD
-      </Container>
-=======
->>>>>>> 4d09c4dbc9abd4b2e4696ff37de6ec966fe40ecc
-    </div>
-  );
-}
-
-export default Content;
+const Contact = styled.button`
+  width: 239px;
+  height: 62px;
+  font-size: 18px;
+  bordar-radius: 2px solid;
+  border: solid 2px #fea825;
+  font-family: Lato-SemiBold;
+  cursor: pointer;
+  color: #fea825;
+`;
