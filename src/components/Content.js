@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../atoms/Container";
 import FontStyle from "../font/FontStyle";
 import Photo from "../Image/about-us.png";
 function Content() {
@@ -45,7 +44,9 @@ function Content() {
           </Description>
           <Contact>Contact Us</Contact>
         </div>
-        <AboutUs />
+       
+          <AboutUs />
+       
       </BodySection>
     </div>
   );
@@ -107,4 +108,5 @@ const Contact = styled.button`
   font-family: Lato-SemiBold;
   cursor: pointer;
   color: #fea825;
+  background-color:white;
 `;
