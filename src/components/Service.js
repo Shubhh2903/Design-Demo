@@ -5,6 +5,7 @@ import FontStyle from "../font/FontStyle";
 import bg from "../Image/bg.png";
 import Toggle from "./Toggle";
 import logoBg from "../Image/logo-bg.png";
+import Facilty from "./Facilty";
 function Service() {
   return (
     <>
@@ -18,7 +19,6 @@ function Service() {
             <Wrapper>
               <Box>
                 The heart of{" "}
-            
                 <span
                   style={{
                     fontFamily: "Lato-Heavy",
@@ -38,7 +38,9 @@ function Service() {
               <LogoBG />
             </BgLogo>
           </Header>
+          <Facilty/>
         </Container>
+       
       </Contant>
     </>
   );
@@ -90,7 +92,7 @@ const LogoBG = styled.div`
 const Header = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 `;
 
 const SubHeading = styled.div`
