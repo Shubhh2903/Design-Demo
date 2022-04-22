@@ -6,6 +6,7 @@ import LatoRegular from '../font/Lato-Regular.ttf'
 import LatoBold from '../font/Lato-Bold.ttf'
 import LatoHeavy from '../font/Lato-Heavy.ttf'
 import LatoMedium from '../font/Lato-Medium.ttf'
+import LatoBlack from '../font/Lato-Black.ttf'
 const FontStyle = createGlobalStyle`
     @font-face{
         font-family: 'Lato-SemiBold';
@@ -30,6 +31,10 @@ const FontStyle = createGlobalStyle`
     @font-face{
         font-family: 'Lato-Medium';
         src:url(${LatoMedium})
+    }
+    @font-face{
+        font-family: 'Lato-Black';
+        src:url(${LatoBlack})
     }
 `
 export default FontStyle

@@ -1,6 +1,8 @@
-import React, {useRef} from "react";
+/** @format */
+import logoBg from '../Image/logo-bg.png'
+import React, { useRef } from "react";
 import styled from "styled-components";
-
+import rec from "../Image/rectangle.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import BG from "../Image/home-banner/case.png";
@@ -19,8 +21,9 @@ function CaseStudy() {
     arrows: false,
   };
   const sliderEl = useRef(null);
-  const handleSlide = side => () => side ? sliderEl.current.slickNext() : sliderEl.current.slickPrev()
-  
+  const handleSlide = (side) => () =>
+    side ? sliderEl.current.slickNext() : sliderEl.current.slickPrev();
+
   return (
     <div>
       <Content>
@@ -70,12 +73,35 @@ function CaseStudy() {
           <Button onClick={handleSlide(0)}>←</Button>
           <Button onClick={handleSlide(1)}>→</Button>
         </Btn>
+        <Container>
+          <Head>Smart Savvy Academy</Head>
+          <Data>
+            Smart Savvy is a unique recruitment agency that specializes in
+            marketing, communications, and sales roles. They work with
+            businesses and job seekers, helping companies find the perfect fit
+            for their teams.
+            <br/>
+            <br/>
+             They now offer training development options for
+            businesses looking to level up their internal employees, through the
+            Smart Savvy Academy.
+          </Data>
+        </Container>
       </Nav>
+      <LogoBG/>
+
     </div>
   );
 }
 
 export default CaseStudy;
+const LogoBG = styled.div`
+  background-image: url(${logoBg});
+  width: 532px;
+  height: 226px;
+  background-size: cover;
+`;
+
 
 const Content = styled.div`
   margin-left: 117px;
@@ -112,11 +138,39 @@ const Button = styled.button`
 `;
 const Nav = styled.div`
   margin-left: 150px;
+  position: relative;
 `;
 
 const Btn = styled.div`
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    width:30%;
-`
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+`;
+const Container = styled.div`
+  background-image: url(${rec});
+  height: 500px;
+  width: 718px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: -310px 0 0 630px;
+`;
+
+const Head = styled.div`
+  font-family: Lato-black;
+  color: #1b75bc;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 85px;
+`;
+
+const Data = styled.div`
+  font-family: Lato-Regular;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: left;
+  margin:25px 129px 180px 85px;
+`;
+
+

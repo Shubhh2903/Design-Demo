@@ -5,6 +5,7 @@ import HeaderSection from "./components/HeaderSection";
 import Content from "./components/Content"
 import Service from "./components/Service";
 import CaseStudy from "./components/CaseStudy";
+import Client from "./components/Client";
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
       <Content/>
       <Service/>
       <CaseStudy/>
-      <h1>working nice</h1>
+      <Client/>
     </>
   );
 }
