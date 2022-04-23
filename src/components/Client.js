@@ -1,28 +1,40 @@
 /** @format */
 import bg from "../Image/bg.png";
-import React from "react";
 import styled from "styled-components";
+import Company from "./Company";
+
 function Client() {
   return (
-    <div>
+    < >
       <Contant>
         <Wrapper>
-          <div>
+          <div style={{width:"100%"}} >
             <Head>
               <span style={{ fontSize: "90px" }}>O</span>ur{" "}
               <span style={{ fontSize: "90px" }}>C</span>lients
             </Head>
-            <SubHeading>
-              We help growing <span style={{fontFamily:"Lato-Heavy"}}>Companies move further, faster</span>
-            </SubHeading>
+            <Subwrapper>
+              <SubHeading>
+                We help growing{" "}
+                <span style={{ fontFamily: "Lato-Heavy" }}>
+                  Companies move further, faster
+                </span>
+              </SubHeading>
+            </Subwrapper>
+            <Company/>
           </div>
         </Wrapper>
       </Contant>
-    </div>
+    </>
   );
 }
 
 export default Client;
+const Subwrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Contant = styled.div`
   display: flex;
   background-image: url(${bg});
@@ -30,6 +42,8 @@ const Contant = styled.div`
   height: 1640px;
   background-repeat: no-repeat;
   margin-top: 100px;
+  width:100%;
+  
 `;
 
 const Head = styled.div`
@@ -43,6 +57,8 @@ const Head = styled.div`
 const Wrapper = styled.div`
   display: flex;
   margin-left: 115px;
+  width:100%;
+
 `;
 
 const SubHeading = styled.div`
@@ -50,5 +66,5 @@ const SubHeading = styled.div`
   font-size: 38px;
   line-height: 50px;
   color: #0f273b;
-  margin-top:26px;
+  margin-top: 26px;
 `;

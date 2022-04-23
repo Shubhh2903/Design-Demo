@@ -1,5 +1,5 @@
 /** @format */
-import logoBg from '../Image/logo-bg.png'
+import logoBg from "../Image/logo-bg.png";
 import React, { useRef } from "react";
 import styled from "styled-components";
 import rec from "../Image/rectangle.png";
@@ -80,16 +80,15 @@ function CaseStudy() {
             marketing, communications, and sales roles. They work with
             businesses and job seekers, helping companies find the perfect fit
             for their teams.
-            <br/>
-            <br/>
-             They now offer training development options for
-            businesses looking to level up their internal employees, through the
-            Smart Savvy Academy.
+            <br />
+            <br />
+            They now offer training development options for businesses looking
+            to level up their internal employees, through the Smart Savvy
+            Academy.
           </Data>
         </Container>
       </Nav>
-      <LogoBG/>
-
+      <LogoBG />
     </div>
   );
 }
@@ -101,7 +100,6 @@ const LogoBG = styled.div`
   height: 226px;
   background-size: cover;
 `;
-
 
 const Content = styled.div`
   margin-left: 117px;
@@ -153,8 +151,8 @@ const Container = styled.div`
   width: 718px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: -310px 0 0 780px;
   position: absolute;
-  margin: -310px 0 0 630px;
 `;
 
 const Head = styled.div`
@@ -170,7 +168,5 @@ const Data = styled.div`
   font-size: 18px;
   line-height: 31px;
   text-align: left;
-  margin:25px 129px 180px 85px;
+  margin: 25px 129px 180px 85px;
 `;
-
-
