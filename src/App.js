@@ -6,6 +6,7 @@ import Content from "./components/Content"
 import Service from "./components/Service";
 import CaseStudy from "./components/CaseStudy";
 import Client from "./components/Client";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Service/>
       <CaseStudy/>
       <Client/>
+      <Contact/>
     </>
   );
 }
