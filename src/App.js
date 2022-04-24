@@ -7,6 +7,7 @@ import Service from "./components/Service";
 import CaseStudy from "./components/CaseStudy";
 import Client from "./components/Client";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <CaseStudy/>
       <Client/>
       <Contact/>
+      <Footer/>
     </>
   );
 }
