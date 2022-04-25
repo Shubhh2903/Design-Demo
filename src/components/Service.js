@@ -53,6 +53,7 @@ const Contant = styled.div`
   background-image: url(${bg});
   background-size: contain;
   height: 1640px;
+  background-repeat:no-repeat;
 `;
 
 const Text = styled.div`

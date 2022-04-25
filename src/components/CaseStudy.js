@@ -151,7 +151,7 @@ const Container = styled.div`
   width: 718px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: -310px 0 0 580px;
+  margin: -310px 0 0 780px;
   position: absolute;
 `;
 

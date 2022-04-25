@@ -10,8 +10,8 @@ import pinterest from "../Image/logo-pinterest.svg";
 import twitter from "../Image/logo-twitter.png";
 function Footer() {
   return (
-    <div>
-      <Cotent>
+    <Cotent>
+      <Wrapper>
         <Logo />
         <List>
           <Head>
@@ -48,21 +48,47 @@ function Footer() {
           <Label>Sign up to our newsletter</Label>
           <Email placeholder="Your Email Address"></Email>
         </SignUp>
-      </Cotent>
-    </div>
+      </Wrapper>
+      <Foot>
+        <CopyWrite>© 2019 RnD. All rights reserved.</CopyWrite>
+      </Foot>
+    </Cotent>
   );
 }
 
 export default Footer;
+
+const CopyWrite = styled.div`
+  font-family: Lato-Regular;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin-top:25px;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center;
+`;
+const Foot = styled.div`
+  width: 100%;
+  border-top: 1px solid #2c6491;
+  margin-top: 50px;
+`;
 
 const Email = styled.input`
   width: 270px;
   height: 48px;
   background-color: #ffffff;
   border-radius: 4px;
-  margin-top:40px;
-  font-family:Montserrat-Light;
-  font-size:14px;
+  margin-top: 40px;
+  font-family: Montserrat-Light;
+  font-size: 14px;
 `;
 const Label = styled.div`
   font-family: Lato-Bold;
@@ -75,13 +101,13 @@ const Label = styled.div`
 
 const SignUp = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 `;
 const Twitter = styled.div`
-  background-image: url(${twitter});
+  background-image: url(${facebook});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 16px;
+  width: 10px;
   height: 16px;
 `;
 const Twitterdiv = styled.div`
@@ -104,10 +130,10 @@ const Pinterestdiv = styled.div`
   margin-left: 20px;
 `;
 const Pinterest = styled.div`
-  background-image: url(${pinterest});
+  background-image: url(${facebook});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 16px;
+  width: 10px;
   height: 16px;
 `;
 
@@ -155,6 +181,7 @@ const VisitUS = styled.div`
   font-size: 12px;
   color: #fff;
   margin-top: 100px;
+  flex-direction: column;
 `;
 const Ul = styled.ul`
   font-familu:;ato-Regular;
@@ -181,16 +208,12 @@ const Head = styled.div`
   font-size: 12px;
 `;
 const Cotent = styled.div`
-  display: flex;
   background-image: url(${bg});
   background-size: cover;
   height: 459px;
   background-repeat: no-repeat;
-  margin-top: 100px;
   width: 100%;
-  fill: #024376;
   justify-content: space-between;
-  align-items: center;
 `;
 const Logo = styled.div`
   background-image: url(${footerLogo});
