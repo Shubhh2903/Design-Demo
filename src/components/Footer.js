@@ -6,7 +6,7 @@ import bg from "../Image/bg.svg";
 import footerLogo from "../Image/fotter-logo.png";
 import facebook from "../Image/logo-fb-simple.png";
 import insta from "../Image/logo-instagram.png";
-import pinterest from "../Image/logo-pinterest.png";
+import pinterest from "../Image/logo-pinterest.svg";
 import twitter from "../Image/logo-twitter.png";
 function Footer() {
   return (
@@ -33,37 +33,128 @@ function Footer() {
             <Facebookdiv>
               <Facebook />
             </Facebookdiv>
+            <Instagramdiv>
+              <Instagram />
+            </Instagramdiv>
+            <Pinterestdiv>
+              <Pinterest />
+            </Pinterestdiv>
+            <Twitterdiv>
+              <Twitter />
+            </Twitterdiv>
           </Socail>
         </VisitUS>
+        <SignUp>
+          <Label>Sign up to our newsletter</Label>
+          <Email placeholder="Your Email Address"></Email>
+        </SignUp>
       </Cotent>
     </div>
   );
 }
 
 export default Footer;
+
+const Email = styled.input`
+  width: 270px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top:40px;
+  font-family:Montserrat-Light;
+  font-size:14px;
+`;
+const Label = styled.div`
+  font-family: Lato-Bold;
+  font-size: 12px;
+  color: #ffffff;
+  width: 177px;
+  height: 22px;
+  margin-right: 200px;
+`;
+
+const SignUp = styled.div`
+  display: flex;
+  flex-direction:column;
+`;
+const Twitter = styled.div`
+  background-image: url(${twitter});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+`;
+const Twitterdiv = styled.div`
+  background-color: #012e51;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+`;
+
+const Pinterestdiv = styled.div`
+  background-color: #012e51;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+`;
+const Pinterest = styled.div`
+  background-image: url(${pinterest});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+`;
+
+const Instagramdiv = styled.div`
+  background-color: #fea825;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+`;
+const Instagram = styled.div`
+  background-image: url(${insta});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+`;
 const Facebookdiv = styled.div`
   background-color: #012e51;
   height: 48px;
   width: 48px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;
 const Facebook = styled.div`
-  backrground-image: url(${facebook});
-  background-size: contain;
+  background-image: url(${facebook});
+  background-size: cover;
   background-repeat: no-repeat;
   width: 10px;
   height: 16px;
 `;
 
 const Socail = styled.div`
-  dispaly: flex;
+  margin-top: 40px;
+  display: grid;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
 `;
 
 const VisitUS = styled.div`
   font-family: lato-Bold;
   font-size: 12px;
   color: #fff;
-  margin: 215px 0 0 200px;
+  margin-top: 100px;
 `;
 const Ul = styled.ul`
   font-familu:;ato-Regular;
@@ -76,7 +167,7 @@ const Ul = styled.ul`
 `;
 const List = styled.div`
   display: flex;
-  margin: 162px 0 0 100px;
+  margin-top: 162px;
   align-items: center;
 `;
 const Nav = styled.div`
@@ -98,6 +189,8 @@ const Cotent = styled.div`
   margin-top: 100px;
   width: 100%;
   fill: #024376;
+  justify-content: space-between;
+  align-items: center;
 `;
 const Logo = styled.div`
   background-image: url(${footerLogo});
