@@ -50,7 +50,7 @@ function Footer() {
         </SignUp>
       </Wrapper>
       <Foot>
-        <CopyWrite>© 2019 RnD. All rights reserved.</CopyWrite>
+        <CopyWrite>© 2019 RnD. All rights reserved to Shubham Lilawala.</CopyWrite>
       </Foot>
     </Cotent>
   );

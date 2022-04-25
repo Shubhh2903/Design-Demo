@@ -52,7 +52,7 @@ const Contant = styled.div`
   display: flex;
   background-image: url(${bg});
   background-size: contain;
-  height: 1640px;
+  height:1640px;
   background-repeat:no-repeat;
 `;
 

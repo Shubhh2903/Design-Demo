@@ -1,9 +1,8 @@
 /** @format */
 
 import React from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import bit from "../Image/bitmap.png";
-import rectangle from "../Image/rectangle-copy-21.png";
 import facebook from "../Image/facebook.png";
 import yahoo from "../Image/yahoo.png";
 import google from "../Image/google.png";
@@ -19,18 +18,42 @@ function Company() {
   return (
     <>
       <Content>
-        <Bit />
-        <Facebook />
-        <Yahoo />
-        <Google />
-        <Mint />
-        <Guess />
-        <Kreation />
-        <Vital />
-        <Never />
-        <Amazon />
-        <Instagram />
-        <Roaster />
+        <Test>
+          <Test2 backgroundImage={bit} />
+        </Test>
+        <Test active>
+          <Test2 backgroundImage={facebook} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={yahoo} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={google} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={mint} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={guess} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={kreation} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={vital} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={never} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={amazon} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={insta} />
+        </Test>
+        <Test>
+          <Test2 backgroundImage={rooter} />
+        </Test>
       </Content>
     </>
   );
@@ -38,120 +61,35 @@ function Company() {
 
 export default Company;
 
-const Content = styled.div`
+const Test = styled.div`
   display: flex;
-  margin-left: 40px;
-  flex-direction: row;
-  margin-top: 100px;
   align-items: center;
-  justify-content: space-between;
-  flex-flow: wrap;
+  justify-content: center;
+  height: 167px;
   background-color: #f7f9fb;
-
-`;
-const Bit = styled.div`
-  background-image: url(${bit});
-  width: 25%;
-  height: 90px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-const Facebook = styled.div`
-  width: 25%;
-  background-image: url(${facebook});
-  height: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
+  ${({active}) => active && css`
+    background-color: #fff;
+    box-shadow: -9px 3px 20px 0 rgba(0, 0, 0, 0.08);
+    transform: scale(1.008);
+  `}
 `;
 
-const Yahoo = styled.div`
-  width: 25%;
-  background-image: url(${yahoo});
-  height: 47px;
+const Test2 = styled.div`
+  display: flex;
+  width: 70%;
+  height:50%;
+  background-image: url(${({ backgroundImage }) => backgroundImage});
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: 49px;
+  background-position:center;
 `;
 
-const Google = styled.div`
-  width: 25%;
-  background-image: url(${google});
-  height: 68px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
+const Content = styled.div`
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
+  gap: 1px;
+  background-color: #cfd9e2;
+  margin-right:40px;
 
-const Mint = styled.div`
-  width: 25%;
-  background-image: url(${mint});
-  height: 68px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Guess = styled.div`
-  background-image: url(${guess});
-  width: 25%;
-  height: 42px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Kreation = styled.div`
-  background-image: url(${kreation});
-  height: 81px;
-  background-repeat: no-repeat;
-  width: 25%;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Vital = styled.div`
-  background-image: url(${vital});
-  height: 47px;
-  background-repeat: no-repeat;
-  width: 25%;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Never = styled.div`
-  background-image: url(${never});
-  height: 81px;
-  width: 25%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Amazon = styled.div`
-  background-image: url(${amazon});
-  width: 25%;
-  height: 54px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Instagram = styled.div`
-  background-image: url(${insta});
-  width: 25%;
-  height: 56px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
-`;
-
-const Roaster = styled.div`
-  background-image: url(${rooter});
-  width: 25%;
-  height: 38px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 49px;
 `;

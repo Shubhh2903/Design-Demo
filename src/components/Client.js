@@ -39,7 +39,7 @@ const Contant = styled.div`
   display: flex;
   background-image: url(${bg});
   background-size: contain;
-  height: 1450px;
+  height: 1458px;
   background-repeat: no-repeat;
   margin-top: 100px;
   width:100%;
@@ -53,10 +53,11 @@ const Head = styled.div`
   font-weight: bold;
   color: #dbe8f3;
   margin-top: 158px;
+  padding-left:75px;
 `;
 const Wrapper = styled.div`
   display: flex;
-  margin-left: 115px;
+  padding-left:75px;
   width:100%;
 
 `;
@@ -67,4 +68,5 @@ const SubHeading = styled.div`
   line-height: 50px;
   color: #0f273b;
   margin-top: 26px;
+  padding-left:75px;
 `;
